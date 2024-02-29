@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Buttons</title>
+<style>
+    #redButton {
+        margin: 30px 30px 30px 30px;
+    }
+</style>
+</head>
+<body>
+
+<script>
+    var redButton = document.createElement('button');
+    redButton.id = 'redButton';
+    redButton.innerHTML = 'RedButton';
+    redButton.style.background = '#FF4F4F'; 
+    document.body.appendChild(redButton);
+
+    redButton.addEventListener('click', function() {
+        var tag1 = document.createElement('p');
+        tag1.innerHTML = 'red'; 
+        document.body.appendChild(tag1); 
+    });
+
+    var greenButton=document.createElement('button');
+    greenButton.id='greenButton';
+    greenButton.innerHTML='GreenButton';
+    greenButton.style.background = '#90EE90';
+    document.body.appendChild(greenButton);
+
+    greenButton.addEventListener('click',function(){
+        var tag2=document.createElement('p');
+        tag2.innerHTML='green';
+        document.body.appendChild(tag2);
+    });
+</script>
+
+</body>
+</html>
